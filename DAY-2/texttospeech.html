@@ -1,0 +1,75 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>input button</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+       .content{
+         
+         width: 500px;
+         height: 500px;
+         border: 2px solid black ;
+         background-image: linear-gradient(to left,"red",);
+         display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+           align-items: center;
+           justify-content: space-around
+           
+           
+       }
+       #text {
+         font-size: 50px;
+         width:250px;
+         height: 150px;;
+         text-decoration: none;
+         background:  transparent;
+         border: 2px solid greenyellow;
+         border-radius: 5px;
+       }
+  .button {
+         padding: 20px 10px;
+          border-radius: 20px;
+          background-color: reenyellow;
+       }
+       .button:hover{
+          background-color: yellowgreen;
+       }
+       
+    </style>
+    <link rel="stylesheet" href="js.js">
+  </head>
+  
+  <body>
+    <div class="content">
+      <h1>enter text to convert <br> in voice</h1>
+    
+  <div class="input">
+    <textarea name="" id="text" cols="40" rows="50" placeholder="enter text"></textarea>
+      
+  </div>
+   <div>
+      <button type="submit" id="speech" class="button" > convert to Spack</button>
+   </div>
+   </div>
+   
+  </body>
+  <script>
+   
+    const textarea=document.querySelector('text'),speechbtn=document.querySelector('speech');
+     let synth=speechSynthesis;
+  function voice (){
+      for(let voice of synth.getVoices()){
+        console.log(voice);
+        let option=<option value="$(voice.name)">$(voice.name)</option>
+      }
+    }
+      
+  </script>
+  </html>

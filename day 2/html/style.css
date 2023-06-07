@@ -1,0 +1,63 @@
+h1{
+   background: #000;
+    width: auto;
+    text-align: justify;
+    text-shadow: 0cm;
+    background-color: blue;
+    text-emphasis: 20;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+    border: 0px solid rgba(19, 233, 19, 0.905);
+}
+.navigation {
+    border: 2px solid aqua;
+    border-radius: 2px solid blck;
+}
+
+.buttton1 :visited{
+    box-shadow: 0cap;
+
+}
+.contener {
+    border-color: rgba(222, 241, 12, 0.653);
+    border-radius: 2px;
+
+}
+.contener :hover{
+    text-emphasis: none;
+}
+.buttton1 {
+    font-family: monospace;
+    text-decoration-color: aqua;
+    width: 100;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-origin: padding-box;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.buttton2 {
+
+    width: 100;
+    margin: 0%;
+    padding: auto;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-origin: padding-box;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.buttton3 {
+
+    width: 100;
+    border: #eb5f5fdd;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-origin: padding-box;
+    text-align: center;
+    text-transform: capitalize;
+
+}

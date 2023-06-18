@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theamchanger</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #fff;
+            width: 100%;
+            min-height: 700px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+              align-items: center;
+        }
+
+        .btn{
+            margin: 10px;
+            padding: 15px 20px;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 0 rgba(34, 33, 33, 0);
+        }
+    </style>
+</head>
+<body>
+    <button  class="btn"  id ="on"onclick="change()">on</button>
+    <button class="btn"  id ="off"onclick="change1()">off</button>
+</body>
+<script>
+    let body=document.querySelector("body")
+    let btn1=document.querySelector("#on");
+    let  btn2=document.querySelector("#off");
+      function change() {
+        body.style.backgroundColor="red"
+        btn2.style.backgroundColor="black"
+      }
+      function change1() {
+        body.style.backgroundColor="black"
+        btn1.style.backgroundColor="red"
+      }
+  
+</script>
+</html>

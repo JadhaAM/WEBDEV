@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form </title>
+    </head>
+    <form method="post" action="apply_now.php">
+        <input name="Subject" type="hidden" value="class" />
+        <fieldset><legend>Academic Information</legend><br>
+            <label for="degree">Degree</label>
+            <select name="degree" id="degree">
+                <option value="BA" >Bachelor of Art</option>
+                <option value="BCS">Bachelor of Computer Science</option>
+                <option value="BCA">Bachelor of Computer Application</option>
+                <option value="BE">Bachelor of Engineering</option>
+                <option value="ME">Master of Engineering</option>
+            </select>
+            <br /><br>
+            <label for="studentid" >Student ID:</label>
+            <input type="text" name="studentid" /><br><br>
+            <label for="password" >Password:</label>
+            <input type="password" name="pwd" />
+        </fieldset>
+    
+        <fieldset><legend>Personal Details</legend>
+            <label for="Fname">First Name:</label>
+            <input type="text" name="Fname" id="fname" />
+            <br /><br>
+            <label for="Lname">Last Name:</label>
+            <input type="text" name="Lname" id="lname" />
+            <br /><br>
+            Gender:
+            <input name="gender" type="radio" id="gm" value="m" />
+            <label for="gm">Male</label>
+            <input name="gender" type="radio" id="gf" value="f" />
+            <label for="gf">Female</label>
+            <br /><br>
+            <label for="email">Email ID:</label>
+            <input type="text" name="email" id="email" />
+        </fieldset>
+        <p>
+            <textarea name="terms" cols="30" rows="4" readonly="readonly"> TERMS AND CONDITIONS...               
+            </textarea>
+        </p> 
+        <p>
+            <input type="submit" name="Submit" value="Send Form" />
+            <input type="reset" name="reset" value="Clear Form" />
+        </p>
+    </form>
+</html>

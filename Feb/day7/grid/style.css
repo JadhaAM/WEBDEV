@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+body, main{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+}
+.div-1{
+    min-height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: aqua;
+    margin: 50px auto;
+}
+.div-1 > div{
+    height: 100%;
+    width: 100%;
+}
+.div-2{
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 10%;
+}
+.two{
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+}
+.item-1{
+    display: grid;
+    grid-auto-rows: 40% 1fr;
+}
+
+.item-2{
+    display: grid;
+    grid-auto-rows: 1fr 30%;
+}
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div-3{
+    min-height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    background-color: aqua;
+    margin: 50px auto;
+}
+
+.div-4{
+    min-height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns:  70% 1fr;
+    background-color: aqua;
+    margin: 50px auto;
+}
+.d1{
+    display: grid;
+    grid-template-rows: 70% 1fr;
+}
+.d3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.d2{
+    display: grid;
+    grid-template-rows: 1fr 40% 1fr;
+}

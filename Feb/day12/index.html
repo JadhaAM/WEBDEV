@@ -12,21 +12,22 @@
          <h1> login form</h1>
         <form action="#" method="get">
             <div>
-                Name : <input  type="text" placeholder="your name" required />
+                Name : <input  type="text" id="input1" placeholder="your name" required />
             </div>
             <div>
-                Email : <input  type="email" placeholder="your email" required />
+                Email : <input  type="email" id="input2" placeholder="your email" required />
             </div>
             <div>
-                 Password: <input  type="password" placeholder="your password" required />
+                 Password: <input  type="password" id="input3" placeholder="your password" required />
             </div>
             <div>
-                <button class="btn" type="submit">submit</button>
+                <button class="btn" type="submit" >login</button>
             </div>
             <div>
-                <h3> dont have an count ? <span>Sign Up</span></h3>
+                <h3> dont have an count ? <span id="span" onclick="changeContanent()">Sign Up</span></h3>
             </div>
         </form>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

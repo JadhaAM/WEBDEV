@@ -14,7 +14,12 @@ body{
 position: absolute;
  min-width:100%;
 min-height: 50%;
- background: rgb(212, 96, 160);
+
  left: 0;
  top: 0;
+}
+
+
+.assets{
+    display: none;
 }

@@ -1,3 +1,7 @@
+
+
+
+
 class Game{
     constructor(canvas,context){
         this.canvas=canvas;
@@ -6,7 +10,8 @@ class Game{
         this.height=this.canvas.height;
         this.baseHeight=720;
         this.ratio=this.height/this.baseHeight;
-        this.player=new player(this);
+        this.background=new  Background(this);
+        this.player = new Player(this);
         this.gravity;
 
          this.resize(window.innerWidth,window.innerHeight)
@@ -56,6 +61,8 @@ class Game{
 
     render(){
         
+        this.background.update();
+        this.background.draw();
         this.player.update();
         this.player.draw();
     }

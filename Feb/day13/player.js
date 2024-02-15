@@ -1,4 +1,4 @@
-class player {
+class Player {
     constructor(game) {
         // Player initialization code
         this.game=game;

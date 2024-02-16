@@ -20,7 +20,7 @@ class Background {
   }
   draw() {
     this.game.ctx.drawImage(this.image, this.x, 0, this.scaleWidth, this.scaleHeight);
-    this.game.ctx.drawImage(this.image2, this.x + this.scaleWidth, 0, this.scaleWidth - 2, this.scaleHeight);
+    this.game.ctx.drawImage(this.image, this.x + this.scaleWidth, 0, this.scaleWidth - 2, this.scaleHeight);
     if (this.game.canvas.width >= this.scaleWidth) {
       this.game.ctx.drawImage(this.image, this.x + this.scaleWidth * 2 - 4, 0, this.scaleWidth, this.scaleHeight);
     }

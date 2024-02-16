@@ -56,6 +56,10 @@ class Game {
         this.speed = 2 * this.ratio;
         this.background.resize();
         this.player.resize();
+        this.createObstacle();
+        this.obstacle.forEach((obs)=>{
+            obs.resize();
+        });
 
     }
 
@@ -65,6 +69,10 @@ class Game {
         this.background.draw();
         this.player.update();
         this.player.draw();
+        this.obstacle.forEach((obs)=>{
+            obs.update();
+            obs.draw();
+        });
     }
     createObstacle() {
         this.obstacle = [];

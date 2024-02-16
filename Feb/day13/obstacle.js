@@ -7,7 +7,7 @@ class obstacle {
         this.scaledWidth = this.spriteWidth * this.game.ratio;
         this.scaledHeight = this.scaledHeight * this.game.ratio;
         this.x = x;
-        this.y = this.game.height * 0.5 - this.height;
+        this.y = this.game.height * 0.5 - this.scaledHeight;
 
     }
     update(){
@@ -15,7 +15,7 @@ class obstacle {
 
     }
     draw(){
-        this.game.ctx.fillRect(this.x, this.y, this.scaledWidth, this.scaledHeight);
+        this.game.ctx.fillRect(this.x,this.y,this.scaledWidth,this.scaledHeight);
     }
     resize(){
         this.scaledWidth = this.spriteWidth * this.game.ratio;

@@ -8,7 +8,7 @@ class Game {
         this.ratio = this.height / this.baseHeight;
         this.background = new Background(this);
         this.player = new Player(this);
-        this.obstacle = [];
+        this.obstacles = [];
         this.numberObstacle = 10;
         this.gravity;
         this.speed;
@@ -57,8 +57,8 @@ class Game {
         this.background.resize();
         this.player.resize();
         this.createObstacle();
-        this.obstacle.forEach((obs)=>{
-            obs.resize();
+        this.obstacles.forEach((obstacle)=>{
+            obstacle.resize();
         });
 
     }
@@ -69,17 +69,18 @@ class Game {
         this.background.draw();
         this.player.update();
         this.player.draw();
-        this.obstacle.forEach((obs)=>{
-            obs.update();
-            obs.draw();
+        this.obstacles.forEach((obstacle)=>{
+            obstacle.update();
+            obstacle.draw();
         });
     }
     createObstacle() {
-        this.obstacle = [];
+        this.obstacles = [];
         const firstX = 100;
         const obstacleSpacing = 100;
         for (let i = 0; i < this.numberObstacle; i++) {
-            this.obstacle.push(new Obstacle(this, firstX + i + obstacleSpacing));
+            
+            this.obstacles.push(new obstacle(this, firstX + i + obstacleSpacing));
 
         }
     }

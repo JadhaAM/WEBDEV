@@ -1,4 +1,4 @@
-class Obstacle {
+class obstacle {
 
     constructor(game, x) {
         this.game = game;
@@ -11,11 +11,11 @@ class Obstacle {
 
     }
     update(){
-        this.x-=this.game.speed;
+        this.x -= this.game.speed;
 
     }
     draw(){
-        this.game.ctx.fillRect(this.x,this.y,this.scaledWidth,this.scaledHeight);
+        this.game.ctx.fillRect(this.x, this.y, this.scaledWidth, this.scaledHeight);
     }
     resize(){
         this.scaledWidth = this.spriteWidth * this.game.ratio;

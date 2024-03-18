@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--<title>Registration Form in HTML CSS</title>-->
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="css/register.css" />
+ <link rel="import" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+  <title>Registration</title>
+  <style>
+    /* Import Google font - Poppins */
+    @import url();
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgb(130, 106, 251);
+    }
+
+    .container {
+      position: relative;
+      max-width: 700px;
+      width: 90%;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .container p {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .container .form {
+      margin-top: 30px;
+    }
+
+    .form .input-box {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .input-box label {
+      color: #333;
+    }
+
+    .form :where(.input-box input, .select-box) {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      color: #707070;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 15px;
+    }
+
+    .input-box input:focus {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .form .column {
+      display: flex;
+      column-gap: 15px;
+    }
+
+    .form .button {
+      height: 55px;
+      width: 100%;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 30px;
+      border: none;
+      border-radius: 34px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: rgb(130, 106, 251);
+    }
+
+    .form .button:hover {
+      background: rgb(88, 56, 250);
+    }
+
+    /*Responsive*/
+    @media screen and (max-width: 500px) {
+      .form .column {
+        flex-wrap: wrap;
+      }
+
+      .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+      }
+    }
+  </style>
+
+      
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class=" bg-pink-50">
+
+   <section class="container">
+    <p>Login </p>
+    <form  class="form" method="post">
+      <div class="input-box">
+        <label>Email / User Name</label>
+        <input type="text" placeholder="Enter email address" name="email" required />
+      </div>
+
+      <div class="input-box">
+        <label>Password</label>
+        <input type="text" placeholder="Enter Password" name="password" required />
+      </div>
+      
+      
+
+     <a href="/signIn.html"> <input type="submit" class="button" value="login"> </a>
+    </form>
+    <div class="w-full p-2">
+        <p>Don't have account?  <a href="/signUp.html"> <span> Sign Up</span></a></p>
+    </div>
+  </section> 
+
+  
+</body>
+
+</html>
